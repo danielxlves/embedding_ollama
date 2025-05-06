@@ -7,7 +7,7 @@
 - Ryzen 7730u
 
 ## Instalação
-```bash
+```
 # Instalar Ollama
 curl -fsSL https://ollama.com/install.sh | sh
 sudo systemctl start ollama
@@ -19,8 +19,10 @@ ollama pull nomic-embed-text
 python -m venv ollama-env 
 source venv/bin/activate
 pip install -r requirements.txt
+```
 
-```python
+# Script
+```
 import ollama
 
 def gerar_embeddings(texto):
@@ -42,17 +44,18 @@ def gerar_embeddings(texto):
 if __name__ == "__main__":
     texto = "Ollama é incrível para gerar embeddings locais!"
     gerar_embeddings(texto)
-    ```python
+```
 
-#Executar script
-```bash
+# Executar script
+```
 (ollama-env) alves@fedora:~/tsi$ python embedding_ollama.py
 
-#Resultados
-```bash
+# Resultados
+```
 Texto: Ollama é incrível para gerar embeddings locais!
 
 Tamanho do vetor: 768 dimensões
 
 Primeiros 10 elementos do vetor:
 [0.38265612721443176, 1.8112214803695679, -2.969672679901123, -1.9754486083984375, -0.14563100039958954, -0.6691678762435913, 0.14759887754917145, -0.3818332254886627, -1.1961286067962646, -0.015880636870861053]
+```

@@ -49,6 +49,7 @@ if __name__ == "__main__":
 # Executar script
 ```
 (ollama-env) alves@fedora:~/tsi$ python embedding_ollama.py
+```
 
 # Resultados
 ```
